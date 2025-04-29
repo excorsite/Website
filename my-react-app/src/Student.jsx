@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Student(props) {
   return (
     <div className="student">
@@ -9,7 +11,13 @@ function Student(props) {
   );
 }
 
+Student.propTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
+  isStudent: PropTypes.bool,
+};
+
 export default Student;
-// props = read only properties that are shared between components.
-//       A parents component can send data to a child component.
-//       <Component key = value />
+
+// propTypes = a mechanism that ensures that the passed value is of the correct datatype.
+// age: propTypes.number
