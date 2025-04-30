@@ -4,6 +4,7 @@ import Food from "./Food";
 import Card from "./card";
 import Button from "./button/button";
 import Student from "./Student";
+import App1 from "./App1";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Student name="Squidward" age={41} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
       <Student name="James" age={20} />
+      <App1 />
       <Button />
       <Footer />
     </>
