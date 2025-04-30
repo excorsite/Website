@@ -16,6 +16,7 @@ function App() {
       <Student name="Pradip" age={32} isStudent={false} />
       <Student name="Squidward" age={41} isStudent={false} />
       <Student name="Sandy" age={27} isStudent={true} />
+      <Student name="James" age={20} />
       <Button />
       <Footer />
     </>

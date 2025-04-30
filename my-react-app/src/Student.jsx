@@ -17,7 +17,17 @@ Student.propTypes = {
   isStudent: PropTypes.bool,
 };
 
+Student.defaultProps = {
+  name: "Guest",
+  age: 0,
+  isStudent: false,
+};
+
 export default Student;
+
+// deafultProps = default values for props incase they are not passed from the parent component.
+//        name: "Guest"
+
 // props = read only properties that are shared between components.
 //       A parents component can send data to a child component.
 //       <Component key = value />
