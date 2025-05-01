@@ -5,5 +5,10 @@
   padding: 10px 20px;
   border-radius: 5px;
   border: none;
+  margin: 10px;
+}
+
+.button:hover {
   cursor: pointer;
+  color: hsl(30, 25%, 6%);
 }

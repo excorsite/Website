@@ -57,3 +57,28 @@
   border-radius: 5px;
   margin: 0%;
 }
+
+.list-category {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: hsl(0, 0%, 20%);
+  margin-bottom: 10px;
+  text-align: center;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: hsl(35, 46%, 90%);
+}
+
+.list-items li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  list-style: none;
+  color: hsl(0, 2%, 28%);
+  text-align: center;
+  margin: 0;
+}
+
+.list-items li:hover {
+  color: black;
+  cursor: pointer;
+}
