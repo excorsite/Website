@@ -7,6 +7,7 @@ import Student from "./Student";
 import App1 from "./App1";
 import Render from "./render";
 import Button1 from "./Button1";
+import ProfilePicture from "./ProfilePicture";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Button1 />
       <Render />
       <Button />
+      <ProfilePicture />
       <Footer />
     </>
   );
