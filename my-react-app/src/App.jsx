@@ -6,6 +6,7 @@ import Button from "./button/button";
 import Student from "./Student";
 import App1 from "./App1";
 import Render from "./render";
+import Button1 from "./Button1";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Student name="Sandy" age={27} isStudent={true} />
       <Student name="James" age={20} />
       <App1 />
+      <Button1 />
       <Render />
       <Button />
       <Footer />
