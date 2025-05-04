@@ -9,6 +9,7 @@ import Render from "./render";
 import Button1 from "./Button1";
 import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./MyComponent";
+import Counter from "./Counter";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <Button />
       <MyComponent />
       <Footer />
+      <Counter />
     </>
   );
 }
