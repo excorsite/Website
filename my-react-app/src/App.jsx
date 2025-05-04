@@ -8,13 +8,13 @@ import App1 from "./App1";
 import Render from "./render";
 import Button1 from "./Button1";
 import ProfilePicture from "./ProfilePicture";
+import MyComponent from "./MyComponent";
 
 function App() {
   return (
     <>
       <Header />
       <Food />
-      <Card />
       <Card />
       <Student name="Spongebob" age={25} isStudent={true} />
       <Student name="Pradip" age={32} isStudent={false} />
@@ -25,7 +25,7 @@ function App() {
       <Button1 />
       <Render />
       <Button />
-      <ProfilePicture />
+      <MyComponent />
       <Footer />
     </>
   );
