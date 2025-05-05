@@ -11,6 +11,7 @@ import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Change from "./Change";
+import ColorPicker from "./ColorPicker";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Button />
       <MyComponent />
       <Footer />
+      <ColorPicker />
       <Counter />
       <Change />
     </>
