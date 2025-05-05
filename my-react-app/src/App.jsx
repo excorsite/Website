@@ -10,6 +10,7 @@ import Button1 from "./Button1";
 import ProfilePicture from "./ProfilePicture";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
+import Change from "./Change";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <MyComponent />
       <Footer />
       <Counter />
+      <Change />
     </>
   );
 }
