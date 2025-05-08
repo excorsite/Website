@@ -12,6 +12,7 @@ import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Change from "./Change";
 import ColorPicker from "./ColorPicker";
+import UpdaterFunction from "./UpdaterFunction";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <ColorPicker />
       <Counter />
       <Change />
+      <UpdaterFunction />
     </>
   );
 }
