@@ -14,6 +14,7 @@ import Change from "./Change";
 import ColorPicker from "./ColorPicker";
 import UpdaterFunction from "./UpdaterFunction";
 import UpdateObject from "./UpdateObject";
+import UpdateArray from "./UpdateArray";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Change />
       <UpdaterFunction />
       <UpdateObject />
+      <UpdateArray />
     </>
   );
 }
