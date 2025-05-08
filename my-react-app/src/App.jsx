@@ -13,6 +13,7 @@ import Counter from "./Counter";
 import Change from "./Change";
 import ColorPicker from "./ColorPicker";
 import UpdaterFunction from "./UpdaterFunction";
+import UpdateObject from "./UpdateObject";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
       <Counter />
       <Change />
       <UpdaterFunction />
+      <UpdateObject />
     </>
   );
 }
