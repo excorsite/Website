@@ -16,6 +16,7 @@ import UpdaterFunction from "./UpdaterFunction";
 import UpdateObject from "./UpdateObject";
 import UpdateArray from "./UpdateArray";
 import CarDesign from "./CarDesign";
+import ToDoList from "./ToDoList";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <UpdateObject />
       <UpdateArray />
       <CarDesign />
+      <ToDoList />
     </>
   );
 }
