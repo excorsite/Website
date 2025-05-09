@@ -15,6 +15,7 @@ import ColorPicker from "./ColorPicker";
 import UpdaterFunction from "./UpdaterFunction";
 import UpdateObject from "./UpdateObject";
 import UpdateArray from "./UpdateArray";
+import CarDesign from "./CarDesign";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <UpdaterFunction />
       <UpdateObject />
       <UpdateArray />
+      <CarDesign />
     </>
   );
 }
