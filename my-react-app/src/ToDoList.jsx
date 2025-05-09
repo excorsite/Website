@@ -13,15 +13,41 @@ function ToDoList() {
   }
 
   function addTask() {
-    setTasks((t) => [...t, newTask]);
-    setNewTask("");
+    // remove for blank task to used trim method.
+    if (newTask.trim() !== "") {
+      setTasks((t) => [...t, newTask]);
+      setNewTask("");
+    }
   }
 
-  function deleteTask(index) {}
+  function deleteTask(index) {
+    const UpdateTasks = tasks.filter((_, i) => i !== index);
+    setTasks(UpdateTasks);
+  }
 
-  function moveTaskUp(index) {}
+  function moveTaskUp(index) {
+    if (index > 0) {
+      const UpdateTasks = [...tasks];
 
-  function moveTaskDown(index) {}
+      [UpdateTasks[index], UpdateTasks[index - 1]] = [
+        UpdateTasks[index - 1],
+        UpdateTasks[index],
+      ];
+      setTasks(UpdateTasks);
+    }
+  }
+
+  function moveTaskDown(index) {
+    if (index < tasks.length - 1) {
+      const UpdateTasks = [...tasks];
+
+      [UpdateTasks[index], UpdateTasks[index + 1]] = [
+        UpdateTasks[index + 1],
+        UpdateTasks[index],
+      ];
+      setTasks(UpdateTasks);
+    }
+  }
 
   return (
     <div className="to-do-list">
