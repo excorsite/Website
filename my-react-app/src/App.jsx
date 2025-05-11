@@ -17,6 +17,7 @@ import UpdateObject from "./UpdateObject";
 import UpdateArray from "./UpdateArray";
 import CarDesign from "./CarDesign";
 import ToDoList from "./ToDoList";
+import UseEffect from "./UseEffect";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <UpdateArray />
       <CarDesign />
       <ToDoList />
+      <UseEffect />
     </>
   );
 }

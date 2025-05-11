@@ -16,10 +16,25 @@
 // #4 Fetching Data from an API
 // #5 Clean up when a component unmounts
 
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function UseEffect() {
-  return <div></div>;
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    document.title = `Count: ${count}`;
+  });
+
+  function addCount() {
+    setCount((c) => c + 1);
+  }
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={addCount}>Add</button>
+    </div>
+  );
 }
 
 export default UseEffect;
