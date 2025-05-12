@@ -20,6 +20,7 @@ import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
 import Window from "./Window";
 import DigitalClock from "./DigitalClock";
+import ComponentA from "./UseContext/ComponentA";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
       <ToDoList />
       <UseEffect />
       <Window />
+      <ComponentA />
     </>
   );
 }
