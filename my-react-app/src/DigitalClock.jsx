@@ -20,9 +20,17 @@ function DigitalClock() {
     const seconds = time.getSeconds();
     const meridiem = hours >= 12 ? "PM" : "AM";
 
+    // we used a milatry time so we used a hours to display 13 as 1 below using OR operator.
+
     hours = hours % 12 || 12;
 
-    return `${hours}:${minutes}:${seconds} ${meridiem}`;
+    return `${padZero(hours)}:${padZero(minutes)}:${padZero(seconds)} 
+    ${meridiem}`;
+  }
+
+  function padZero(number) {
+    // if there is no 0 ahead of number in seconds we put a 0 in clock seconds eg: 01 - 09 after that 11-60 seconds will display
+    return (number < 10 ? "0" : "") + number;
   }
 
   return (
