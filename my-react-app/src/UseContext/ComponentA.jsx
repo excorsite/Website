@@ -22,9 +22,15 @@ export const UserContext = createContext();
 function ComponentA() {
   const [user, setUser] = useState("Suyog");
 
+  function handleUser(event) {
+    setUser(event.target.value);
+  }
+
   return (
     <div className="box">
-      <h1>ComponentA</h1>
+      <h1 value={user} onChange={handleUser}>
+        ComponentA
+      </h1>
       <h2>{`Hello ${user}`}</h2>
       <UserContext.Provider value={user}>
         <ComponentB user={user} />
