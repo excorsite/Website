@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-function Windows() {
+function Window() {
   const [width, setWidth] = useState(window.innerWidth);
   const [height, setHeight] = useState(window.innerHeight);
 
@@ -32,4 +32,4 @@ function Windows() {
   );
 }
 
-export default Windows;
+export default Window;

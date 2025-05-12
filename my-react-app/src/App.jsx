@@ -18,11 +18,13 @@ import UpdateArray from "./UpdateArray";
 import CarDesign from "./CarDesign";
 import ToDoList from "./ToDoList";
 import UseEffect from "./UseEffect";
-import Windows from "./Windows";
+import Window from "./Window";
+import DigitalClock from "./DigitalClock";
 
 function App() {
   return (
     <>
+      <DigitalClock />
       <Header />
       <Food />
       <Card />
@@ -46,7 +48,7 @@ function App() {
       <CarDesign />
       <ToDoList />
       <UseEffect />
-      <Windows />
+      <Window />
     </>
   );
 }
