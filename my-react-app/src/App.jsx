@@ -21,6 +21,7 @@ import UseEffect from "./UseEffect";
 import Window from "./Window";
 import DigitalClock from "./DigitalClock";
 import ComponentA from "./UseContext/ComponentA";
+import IsComponent from "./UseRef/IsComponent";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
       <UseEffect />
       <Window />
       <ComponentA />
+      <IsComponent />
     </>
   );
 }

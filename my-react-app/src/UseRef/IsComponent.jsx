@@ -11,19 +11,20 @@
 import React, { useState, useEffect, useRef } from "react";
 
 function IsComponent() {
-  let [number, setNumber] = useState(0);
+  const inputRef = useRef(null);
 
   useEffect(() => {
     console.log("COMPONENT RENDERING");
   });
 
   function handleClick() {
-    setNumber((n) => n + 1);
+    inputRef.current.focus();
   }
 
   return (
     <div>
       <button onClick={handleClick}>Click me!</button>
+      <input ref={inputRef} />
     </div>
   );
 }
