@@ -22,6 +22,7 @@ import Window from "./Window";
 import DigitalClock from "./DigitalClock";
 import ComponentA from "./UseContext/ComponentA";
 import IsComponent from "./UseRef/IsComponent";
+import Stopwatch from "./Stopwatch/Stopwatch";
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
       <Window />
       <ComponentA />
       <IsComponent />
+      <Stopwatch />
     </>
   );
 }
