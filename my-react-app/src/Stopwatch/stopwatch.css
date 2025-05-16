@@ -51,10 +51,10 @@ body {
   background-color: hsl(10, 90%, 35%);
 }
 
-.rest-button {
+.reset-button {
   background-color: hsl(205, 90%, 60%);
 }
 
-.rest-button:hover {
+.reset-button:hover {
   background-color: hsl(205, 90%, 40%);
 }

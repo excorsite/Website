@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import "./stopwatch.css";
 
 function Stopwatch() {
   const [isRunning, setIsRunning] = useState(false);
@@ -42,7 +43,7 @@ function Stopwatch() {
     seconds = String(seconds).padStart(2, "0");
     milliseconds = String(milliseconds).padStart(2, "0");
 
-    return `${minutes}:${seconds}:${milliseconds}`;
+    return `${hours}:${minutes}:${seconds}:${milliseconds}`;
   }
 
   return (
@@ -52,11 +53,11 @@ function Stopwatch() {
         <button onClick={start} className="start-button">
           Start
         </button>
-        <button onClick={reset} className="reset-button">
-          Reset
-        </button>
         <button onClick={stop} className="stop-button">
           Stop
+        </button>
+        <button onClick={reset} className="reset-button">
+          Reset
         </button>
       </div>
     </div>
